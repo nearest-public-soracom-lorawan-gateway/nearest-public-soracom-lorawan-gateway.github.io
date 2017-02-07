@@ -1,5 +1,5 @@
 # nearest-public-soracom-lorawan-gateway.github.io
-公開されている2/7時点のSORACOM LoRaゲートウェイ設置予定場所情報(クレジットにリンクあり)をもとに、現在地からのおおまかな距離を計算して最も近い場所を表示します。
+Webで公開されている2/7時点のSORACOM LoRaゲートウェイ設置予定場所情報(クレジットにリンクあり)をもとに、現在地から各ゲートウェイ設置場所までのおおまかな距離を計算し、最も近い場所の名前と距離を表示します。
 
 実際に試す→ https://nearest-public-soracom-lorawan-gateway.github.io/
 
