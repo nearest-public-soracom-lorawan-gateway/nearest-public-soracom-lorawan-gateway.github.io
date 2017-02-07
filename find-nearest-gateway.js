@@ -51,7 +51,7 @@ var onLocationSuccess = function (pos) {
 
 var showNearestPublicGateway = function(dist, gateway) {
     var distInMeter = Math.round(dist * 1000);
-    document.getElementById("result").innerHTML = "最寄りのSORACOM LoRaWANパブリックゲートウェイは「" + gateway.name + "」で、距離は約" + distInMeter + "mです。<br>" +
+    document.getElementById("result").innerHTML = "最寄りのSORACOM LoRaWANパブリックゲートウェイは「" + gateway.name + "」で、距離は約" + distInMeter.toLocaleString() + "mです。<br>" +
         "→<a href=\"https://maps.google.co.jp/maps?ll=" + gateway.lat + "," + gateway.lng + "&q=" + gateway.name + "\">Google Mapsで開く</a>";
 }
 

@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script async src="find-nearest-gateway.js"></script>
     <title>最寄りのSORACOM LoRaWANパブリックゲートウェイを探す</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -19,9 +22,31 @@
 </head>
 
 <body>
-    <h1>最寄りのSORACOM LoRaWANパブリックゲートウェイを探す</h1>
-    <button onclick="invokeFind()">探す</button>
-    <div id="result"></div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">SORACOM LoRaWANゲートウェイを探す</span>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <p>最寄りのSORACOM LoRaWANパブリックゲートウェイを探します。</p>
+                <div style="text-align: center">
+                    <button onclick="invokeFind()" class="mdl-button mdl-js-button mdl-button--raised">最寄りのゲートウェイを探す</button>
+                </div>
+                <div style="height: 100px">&nbsp;</div>
+                <div id="result"></div>
+            </div>
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Title</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="https://github.com/nearest-public-soracom-lorawan-gateway/nearest-public-soracom-lorawan-gateway.github.io">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
