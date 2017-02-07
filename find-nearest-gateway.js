@@ -51,10 +51,10 @@ var onLocationSuccess = function (pos) {
 
 var showNearestPublicGateway = function(dist, gateway) {
     var distInMeter = Math.round(dist * 1000);
-    var tweetMsg = "最寄りのSORACOM LoRaWANパブリックゲートウェイまでの距離は" + distInMeter.toLocaleString() + "mでした。 https://nearest-public-soracom-lorawan-gateway.github.io/ #SORACOMLoRaWANGW";
+    var tweetMsg = "最寄りのSORACOM LoRaWANパブリックゲートウェイまでの距離は" + distInMeter.toLocaleString() + "mでした。";
     document.getElementById("result").innerHTML = "最寄りのSORACOM LoRaWANパブリックゲートウェイは「" + gateway.name + "」で、距離は約" + distInMeter.toLocaleString() + "mです。<br><br>" +
         "→<a href=\"https://maps.google.co.jp/maps?ll=" + gateway.lat + "," + gateway.lng + "&q=" + gateway.name + "\">Google Mapsでゲートウェイの場所を開く</a><br><br>" +
-        "→<a href=\"http://twitter.com/home?status=" + encodeURIComponent(tweetMsg) + "\">結果をツイートする</a>";
+        "→<a href=\"https://twitter.com/intent/tweet?url=https://nearest-public-soracom-lorawan-gateway.github.io/&hashtags=SORACOMLoRaWANGW&text=" + encodeURIComponent(tweetMsg) + "\">結果をツイートする</a>";
 }
 
 var onLocationError = function (pos) {
